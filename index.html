@@ -159,15 +159,8 @@
 </head>
 <body>
 	<div class="htmleaf-container">
-		<header class="htmleaf-header">
-			<h1>数据库大作业登录界面</h1>
-			<div class="htmleaf-links">
-				<a class="htmleaf-icon icon-htmleaf-home-outline" href="https://wonderful-0803.github.io/" title="个人博客" target="_blank"><span> 个人博客</span></a>
-				<a class="htmleaf-icon icon-htmleaf-arrow-forward-outline" href="https://github.com/wonderful-0803/wonderful-0803.github.io" title="返回github" target="_blank"><span> 返回Github</span></a>
-			</div>
-		</header>
 		<p class="center">默认登录用户名为：wonderful，密码为3.141592653</p>
-		<p class="center">在用户名和密码错误时，点击登录按钮可以看到表单的摇晃效果。</p>
+		<p class="center">尚未连接数据库，故注册功能暂时无法使用</p>
 		<div id="wrapper" class="login-page">
 		  <div id="login_form" class="form">
 		    <form class="register-form">
@@ -212,7 +205,10 @@
 	  {
 	   $("#login_form").addClass('shake_effect')
 	  },1);
-	 }
+   }
+   methods: {
+
+   }
 	}
 	function check_register(){
 		var name = $("#r_user_name").val();
